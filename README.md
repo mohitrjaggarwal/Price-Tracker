@@ -16,3 +16,8 @@ The websites that are currently supported :
 1) https://www.amazon.in/
 2) https://www.flipkart.com/
 
+
+
+### NOTE
+    There is a client_secret.json file which is avoided from being uploaded here.
+    
