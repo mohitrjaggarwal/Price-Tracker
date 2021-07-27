@@ -16,7 +16,7 @@ Since Amazon uses different CSS IDs and classes for the products that are in a s
 or offer, the scipt can only scrape off data from regular products which are not in
 any kind of sale/offer or anything like that. Since its fairly easy to implement the code
 that would scrape products that are under sale/offer as well (just a different ID or
-class in the HTML code), I might implement it soon.
+class in the HTML code).
 
 
 < 2 > Google Spreadsheets
@@ -82,34 +82,6 @@ This application uses 3 APIs :
  already set in the code. 
 
 
-< 3 > CLOUD DEPLOYMENT
-
- In order for the script to run everyday, the user needs to create a cloud service account. I used heroku. 
- Make a free heroku account, initiate a new app, install heroku CLI.
- Now make a folder where you can store all the necessary files for this project. This folder (root directoory) 
-  must contain the following files:
- 
- 1. credentials.json (from the google developers console)
- 2. Procfile (simple text file BUT WITH NO EXTENSION, JUST 'Procfile')
- 3. requirements.txt (which can be created from CMD)
- 4. runtime.txt
- 5. source.py
- 6. source_input.py
-
- Initiate a git repository here, add all files, commit them and push them to heroku.
- Then you
- Video tutorial for better understanding heroku deployment :
- https://www.youtube.com/watch?v=qquCAgwvL8Q&t=828s
- You need to add your twilio API keys on heroku under the settings tab
- You also need to remember to push the files as is the folder structure shown above. No subfolder must be present.
-
- NOTE : The application will work and store data in the spreadsheets on for the 1st 23 days of every month since
- 	heroku provides 550 free dyno hours per month to its free users. But you can expand this limit to 1000 free dyno hours
-        per month by just verifying you credit card on ther heroku website, which will keep this application up and 
-        running 24*7*365.The script actually is running 24*7 on the cloud and never stops, but the scraping part is done 
-     	only once in 24 hours. 
-
-
  < 4 > USER - CONTROL
 
  The user can input the product (only from amazon or flipkart) by running the source_input.py script locally or from the cloud.
@@ -118,5 +90,5 @@ This application uses 3 APIs :
 
 
 ----------SET UP COMPLETE----------------
-The user can now sit back & relax and wait for the price of any particular product to drop, which if it does, the user shall revieve a message on 
+The user can now sit back & relax and wait for the price of any particular product to drop, which if it does, the user shall recieve a message on 
 WhatsApp regarding the same.
