@@ -2,8 +2,6 @@
        PRICE TRACKER
 =============================
 
-What this application does is explained on my github repo :-
-https://github.com/Noobie20/Price-tracker
 
 -------------------------------------------------------------------------------
 This file is for explaining what the application needs in order to work properly.
