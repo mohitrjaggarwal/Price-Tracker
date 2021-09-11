@@ -24,10 +24,10 @@ google_bot = {'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bo
 
 
 # OPENING UP REQUIRED GOOGLE SHEETS
-dfu = gc.open("pricetracker_URLs").sheet1
-#dfa = gc.worksheet("AMAZON")
-#dff = gc.worksheet("FLIPKART")
-#dfu = gc.worksheet('URL')
+dfu = gc.open("URLs").sheet1
+dfa = gc.open("Amazon").sheet1
+dff = gc.open("Flipkart").sheet1
+
 dfu = dfu.get_all_records()
 dfu= pd.DataFrame.from_dict(dfu)
 print(dfu)
